@@ -7,7 +7,8 @@ namespace Serilog
     using Formatting;
     using Formatting.Display;
     using Sinks.XUnit;
-    using Xunit.Abstractions;
+    using Xunit;
+    using Xunit.Sdk;
 
     /// <summary>
     /// Adds the WriteTo.TestOutput() extension method to <see cref="LoggerConfiguration"/>.

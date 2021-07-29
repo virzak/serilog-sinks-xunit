@@ -5,8 +5,9 @@ namespace Serilog.Sinks.XUnit
     using Core;
     using Events;
     using Formatting;
-    using Xunit.Abstractions;
+    using Xunit;
     using Xunit.Sdk;
+    using Xunit.v3;
 
     /// <summary>
     /// A sink to direct Serilog output to the XUnit test output
@@ -50,7 +51,7 @@ namespace Serilog.Sinks.XUnit
             var renderSpace = new StringWriter();
             _textFormatter.Format(logEvent, renderSpace);
             var message = renderSpace.ToString().Trim();
-            _messageSink?.OnMessage(new DiagnosticMessage(message));
+            _messageSink?.OnMessage(new DiagnosticMessage { Message = message });
             _testOutputHelper?.WriteLine(message);
         }
     }

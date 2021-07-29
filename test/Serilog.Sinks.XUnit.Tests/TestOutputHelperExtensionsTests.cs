@@ -8,7 +8,6 @@
     using Formatting;
     using NSubstitute;
     using Xunit;
-    using Xunit.Abstractions;
 
     public static class TestOutputHelperExtensionsTests
     {

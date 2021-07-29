@@ -8,7 +8,7 @@
     using Formatting;
     using NSubstitute;
     using Xunit;
-    using Xunit.Abstractions;
+    using Xunit.v3;
     using Xunit.Sdk;
 
     public static class MessageSinkExtensionsTests

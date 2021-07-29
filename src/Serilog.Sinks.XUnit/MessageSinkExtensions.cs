@@ -4,7 +4,7 @@
     using Core;
     using Events;
     using Formatting;
-    using Xunit.Abstractions;
+    using Xunit.Sdk;
 
     /// <summary>
     /// Provides extension methods that create Serilog loggers
